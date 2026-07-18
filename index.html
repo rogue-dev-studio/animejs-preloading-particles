@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Anime.js Preloading Particles</title>
     <style>
+html, body { margin: 0; height: 100%; background: #111; overflow: hidden; }
 .particule {
   position: absolute;
   top: 50%;
@@ -12,10 +14,12 @@
   border: 1px solid currentColor;
   transform: scale(0);
 }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
     </style>
   </head>
   <body>
-
+    <p class="sr-only">Anime.js preloading particles demo</p>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
     <script>
 var maxElements = 200;
 var duration = 1500;
